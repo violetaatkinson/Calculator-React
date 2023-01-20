@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-self: center;
+  background-color: rgb(97 134 197)
 }
 
-.App-link {
-  color: #61dafb;
+.calculator {
+  margin-top: 70px;
+  background-color: rgb(211, 211, 211);
+  padding: 20px;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.screen {
+  width: 224px;
+  background-color: rgb(176, 205, 176);
+  font-size: 40px;
+  text-align: end;
+  padding: 4px;
 }
+
+.buttons {
+  width: 232px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+button {
+  background-color: rgb(122 122 122);
+  border: none;
+  color: rgb(255,255,255);
+  font-size: 40px;
+  width: 50px;
+  border-radius: 25px;
+  margin: 4px;
+}
+
+button:hover {
+  background-color: rgb(59, 59, 59);
+}
+
+button:active {
+  background-color: rgb(111, 110, 110);;
+}
+
+#equals {
+  background-color: rgb(218, 2,2);
+}
+
+#equals:hover {
+  background-color: rgb(198, 1,1);
+}
+
+#clear {
+  width: 100%;
+  background-color: rgb(39 113 203);
+  font-size: 30px;
+  height: 50px;
+  letter-spacing: 1.5px;
+}
+
+#clear:hover {
+  background-color: rgb(15, 116, 238);
+}
+
